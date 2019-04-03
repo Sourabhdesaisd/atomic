@@ -1,0 +1,143 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on Mar 16, 2026 at 13:25:49 IST
+irun
+	-access +rwc
+	-f compile.f
+		../rtl/alu_add.v
+		../rtl/alu_and.v
+		../rtl/alu_or.v
+		../rtl/alu_xor.v
+		../rtl/alu_top.v
+		../rtl/data_memory_B0.v
+		../rtl/data_memory_B1.v
+		../rtl/data_memory_B2.v
+		../rtl/data_memory_B3.v
+		../rtl/data_memory_top.v
+		../rtl/data_memory_write_en_logic.v
+		../rtl/data_forwarding_block.v
+		../rtl/EXE_WR_register.v
+		../rtl/ID_MR_register.v
+		../rtl/IF_ID_register.v
+		../rtl/MR_EXE_register.v
+		../rtl/instruction_decoder.v
+		../rtl/instruction_mem_B0.v
+		../rtl/instruction_mem_B1.v
+		../rtl/instruction_mem_B2.v
+		../rtl/instruction_mem_B3.v
+		../rtl/instruction_memory_top.v
+		../rtl/program_counter.v
+		../rtl/register_file.v
+		../rtl/reservation_address_register.v
+		../rtl/reservation_valid_register.v
+		../rtl/min_max_signed.v
+		../rtl/min_max_unsigned.v
+		../rtl/mux_21_32.v
+		../rtl/pc_adder.v
+		../rtl/atomic_32_top.v
+		top_tb.v
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+Loading snapshot worklib.atomic_32_tb:v .................... Done
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Instruction memory B0 loaded
+Instruction memory B1 loaded
+Instruction memory B2 loaded
+Instruction memory B3 loaded
+PC=xxx INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=x REG_WE=x
+PC=000 INST=80004137 ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=004 INST=008000ef ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=008 INST=0000006f ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=00c INST=ff010113 ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=010 INST=00500793 ALU=00000020 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=2 MEM_WE=0 REG_WE=0
+PC=014 INST=00f12623 ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000020 REG_IN=00000000 RD=1 MEM_WE=0 REG_WE=0
+PC=018 INST=00300713 ALU=0533c46f MEM_OUT=608001a7 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=01c INST=00c10793 ALU=00000014 MEM_OUT=00000000 RS1=00000008 MEM_IN=a4b3c2c8 REG_IN=608001a7 RD=2 MEM_WE=0 REG_WE=0
+PC=020 INST=1007a7af ALU=9659b8c7 MEM_OUT=608001a7 RS1=00000000 MEM_IN=00000014 REG_IN=00000000 RD=15 MEM_WE=0 REG_WE=0
+PC=024 INST=18e7a7af ALU=0000000c MEM_OUT=00000000 RS1=00000008 MEM_IN=35d9b720 REG_IN=608001a7 RD=12 MEM_WE=0 REG_WE=0
+PC=028 INST=08e7a7af ALU=cd90a68f MEM_OUT=608001a7 RS1=00000000 MEM_IN=0000000c REG_IN=00000000 RD=14 MEM_WE=0 REG_WE=0
+PC=02c INST=00e7a7af ALU=88211a10 MEM_OUT=88211a10 RS1=00000008 MEM_IN=6d10a4e8 REG_IN=608001a7 RD=15 MEM_WE=0 REG_WE=0
+PC=030 INST=20e7a7af ALU=78c6685c MEM_OUT=88211a10 RS1=35d9b720 MEM_IN=00000000 REG_IN=88211a10 RD=15 MEM_WE=0 REG_WE=1
+PC=034 INST=60e7a7af ALU=e14a9c98 MEM_OUT=f0a54e4c RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=00000000 RD=15 MEM_WE=1 REG_WE=1
+PC=038 INST=40e7a7af ALU=e14a9c98 MEM_OUT=f0a54e4c RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=f0a54e4c RD=15 MEM_WE=1 REG_WE=1
+PC=03c INST=80e7a7af ALU=24397b5e MEM_OUT=d49c3512 RS1=35d9b720 MEM_IN=e14a9c98 REG_IN=f0a54e4c RD=15 MEM_WE=1 REG_WE=1
+PC=040 INST=a0e7a7af ALU=00000000 MEM_OUT=00000000 RS1=88211a10 MEM_IN=24397b5e REG_IN=d49c3512 RD=15 MEM_WE=1 REG_WE=1
+PC=044 INST=c0e7a7af ALU=f0bd4eee MEM_OUT=501c06a2 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=15 MEM_WE=1 REG_WE=1
+PC=048 INST=e0e7a7af ALU=f0a54e4c MEM_OUT=f0bd4eee RS1=f0a54e4c MEM_IN=f0bd4eee REG_IN=501c06a2 RD=15 MEM_WE=1 REG_WE=1
+PC=04c INST=0000006f ALU=f0a54e4c MEM_OUT=bc36e574 RS1=f0a54e4c MEM_IN=f0a54e4c REG_IN=f0bd4eee RD=15 MEM_WE=1 REG_WE=1
+PC=050 INST=xxxxxxxx ALU=00000000 MEM_OUT=00000000 RS1=d49c3512 MEM_IN=f0a54e4c REG_IN=bc36e574 RD=15 MEM_WE=1 REG_WE=1
+PC=054 INST=xxxxxxxx ALU=f0a54e4c MEM_OUT=0812bc81 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=15 MEM_WE=1 REG_WE=1
+PC=058 INST=xxxxxxxx ALU=00000000 MEM_OUT=00000000 RS1=501c06a2 MEM_IN=f0a54e4c REG_IN=0812bc81 RD=15 MEM_WE=1 REG_WE=1
+PC=05c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=060 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=064 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=068 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=06c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=070 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=074 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=078 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=07c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=080 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=084 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=088 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=08c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=090 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=094 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=098 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=09c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0a0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0a4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0a8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0ac INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0b0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0b4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0b8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0bc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0c0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0c4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0c8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0cc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0d0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0d4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0d8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0dc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0e0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0e4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0e8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0ec INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0f0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0f4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0f8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0fc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=100 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=104 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=108 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=10c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=110 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=114 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=118 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=11c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=120 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=124 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=128 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=12c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=130 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=134 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=138 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=13c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=140 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=144 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=148 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=14c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=150 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=154 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=158 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=15c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=160 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=164 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=168 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=16c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=170 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+Simulation complete via $finish(1) at time 940 NS + 0
+./top_tb.v:67 $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on Mar 16, 2026 at 13:25:49 IST  (total: 00:00:00)

@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(03Apr2019:03:20:23):( irun -access +rwc -f compile.f )
+s2::(03Apr2019:03:30:14):( irun -access +rwc -f compile.f )
+s3::(03Apr2019:03:32:44):( irun -access +rwc -f compile.f )
+s4::(03Apr2019:04:34:05):( irun -access +rwc -f compile.f )
+s5::(03Apr2019:04:39:35):( irun -access +rwc -f compile.f )
+s6::(03Apr2019:04:42:12):( irun -access +rwc -f compile.f )
+s7::(03Apr2019:04:50:17):( irun -access +rwc -f compile.f )
+s8::(03Apr2019:04:55:02):( irun -access +rwc -f compile.f )

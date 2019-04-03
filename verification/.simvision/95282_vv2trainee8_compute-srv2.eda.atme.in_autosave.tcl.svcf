@@ -1,0 +1,254 @@
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  shown 0
+}
+preferences set savedlg-simulator ppe
+preferences set whats-new-dont-show-at-startup 1
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+
+#
+# Databases
+#
+database require wave -search {
+	./wave.shm/wave.trn
+	/home/vv2trainee8/Desktop/Sourabh/spike_atomic/verification/wave.shm/wave.trn
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1366x665+-1+27}] != ""} {
+    window geometry "Waveform 1" 1366x665+-1+27
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 222 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.pc_out[9:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.instruction_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.instruction[31:0]}
+	} ]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.IF_ID_register_instance.IF_ID_instruction[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.instruction_decoder_instance.opcode[6:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.instruction_decoder_instance.func3[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.instruction_decoder_instance.func7[6:0]}
+	} ]
+waveform format $id -radix %b
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.instruction_decoder_instance.alu_op[2:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.instruction_decoder_instance.write_reg_en
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.instruction_decoder_instance.write_mem_en_amo
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.instruction_decoder_instance.write_mem_en_store
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.instruction_decoder_instance.set_reservation
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.instruction_decoder_instance.sel_data_for_mem
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.ID_MR_register_instance.rd_address[4:0]}
+	} ]
+waveform format $id -radix %d
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.register_file_instance.read_address_1[4:0]}
+	} ]
+waveform format $id -radix %d
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.register_file_instance.read_address_2[4:0]}
+	} ]
+waveform format $id -radix %d
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_from_rs1[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_from_rs2[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_from_rs2_address[31:0]}
+	} ]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.MR_EXE_register_instance.ID_MR_data_from_rs2[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.ID_MR_register_instance.ID_MR_rd_address[4:0]}
+	} ]
+waveform format $id -radix %d
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.ID_MR_register_instance.ID_MR_write_mem_en_amo
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.ID_MR_register_instance.ID_MR_write_mem_en_store
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.ID_MR_register_instance.ID_MR_write_reg_en
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.MR_EXE_register_instance.ID_MR_data_from_rs1[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.mem_out[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.memory_out[31:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.ID_MR_register_instance.ID_MR_set_reservation
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.reserved_address[31:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.reservation_valid
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.reset_reservation
+	} ]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.MR_EXE_register_instance.MR_EXE_data_from_rs2[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.MR_EXE_register_instance.MR_EXE_mem_out[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.MR_EXE_register_instance.MR_EXE_alu_op[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.alu_out[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_in_for_mem[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.MR_EXE_data_from_rs1[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.store_success[31:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.write_mem_en
+	} ]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.EXE_WR_register_instance.EXE_WR_data_from_rs1[31:0]}
+	} ]
+waveform format $id -radix %x
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.EXE_WR_register_instance.EXE_WR_write_mem_en
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.EXE_WR_register_instance.EXE_WR_data_in_for_mem[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_memory_instance.memory_B3.mem_B3[0:1023]}
+	} ]
+waveform hierarchy collapse $id
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_memory_instance.memory_B2.mem_B2[0:1023]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_memory_instance.memory_B1.mem_B1[0:1023]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.data_memory_instance.memory_B0.mem_B0[0:1023]}
+	} ]
+waveform hierarchy collapse $id
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.EXE_WR_register_instance.EXE_WR_rd_address[4:0]}
+	} ]
+waveform format $id -radix %d
+set id [waveform add -signals  {
+	wave::atomic_32_tb.dut.EXE_WR_register_instance.EXE_WR_write_reg_en
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.EXE_WR_register_instance.EXE_WR_data_in_for_reg[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::atomic_32_tb.dut.register_file_instance.mem_reg[0:31]}
+	} ]
+waveform hierarchy collapse $id
+
+waveform xview limits 0 128ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0
+
+#
+# Layout selection
+#

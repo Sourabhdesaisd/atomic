@@ -1,0 +1,184 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 03, 2019 at 04:55:02 IST
+irun
+	-access +rwc
+	-f compile.f
+		../rtl/alu_add.v
+		../rtl/alu_and.v
+		../rtl/alu_or.v
+		../rtl/alu_xor.v
+		../rtl/alu_top.v
+		../rtl/data_memory_B0.v
+		../rtl/data_memory_B1.v
+		../rtl/data_memory_B2.v
+		../rtl/data_memory_B3.v
+		../rtl/data_memory_top.v
+		../rtl/data_memory_write_en_logic.v
+		../rtl/data_forwarding_block.v
+		../rtl/EXE_WR_register.v
+		../rtl/ID_MR_register.v
+		../rtl/IF_ID_register.v
+		../rtl/MR_EXE_register.v
+		../rtl/instruction_decoder.v
+		../rtl/instruction_mem_B0.v
+		../rtl/instruction_mem_B1.v
+		../rtl/instruction_mem_B2.v
+		../rtl/instruction_mem_B3.v
+		../rtl/instruction_memory_top.v
+		../rtl/program_counter.v
+		../rtl/register_file.v
+		../rtl/reservation_address_register.v
+		../rtl/reservation_valid_register.v
+		../rtl/min_max_signed.v
+		../rtl/min_max_unsigned.v
+		../rtl/mux_21_32.v
+		../rtl/pc_adder.v
+		../rtl/atomic_32_top.v
+		top_tb.v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+Loading snapshot worklib.atomic_32_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Instruction memory B0 loaded
+Instruction memory B1 loaded
+Instruction memory B2 loaded
+Instruction memory B3 loaded
+PC=xxx INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=x REG_WE=x
+PC=000 INST=00400793 ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=004 INST=00500713 ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=008 INST=00e7a023 ALU=00000000 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=00c INST=0007a803 ALU=00000010 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=010 INST=1007a8af ALU=00000014 MEM_OUT=00000000 RS1=00000000 MEM_IN=00000010 REG_IN=00000000 RD=15 MEM_WE=0 REG_WE=0
+PC=014 INST=18e7a6af ALU=78c6685c MEM_OUT=88211a10 RS1=00000000 MEM_IN=00000014 REG_IN=00000000 RD=14 MEM_WE=0 REG_WE=0
+PC=018 INST=08e7a5af ALU=88211a10 MEM_OUT=88211a10 RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=88211a10 RD=0 MEM_WE=0 REG_WE=0
+PC=01c INST=00e7a62f ALU=88211a10 MEM_OUT=88211a10 RS1=35d9b720 MEM_IN=00000000 REG_IN=88211a10 RD=16 MEM_WE=0 REG_WE=0
+PC=020 INST=20e7a6af ALU=78c6685c MEM_OUT=88211a10 RS1=35d9b720 MEM_IN=00000000 REG_IN=88211a10 RD=17 MEM_WE=0 REG_WE=1
+PC=024 INST=60e7a72f ALU=e14a9c98 MEM_OUT=f0a54e4c RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=00000000 RD=13 MEM_WE=1 REG_WE=1
+PC=028 INST=40e7a7af ALU=e14a9c98 MEM_OUT=f0a54e4c RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=f0a54e4c RD=11 MEM_WE=1 REG_WE=1
+PC=02c INST=80e7a82f ALU=11efd2d4 MEM_OUT=e14a9c98 RS1=35d9b720 MEM_IN=e14a9c98 REG_IN=f0a54e4c RD=12 MEM_WE=1 REG_WE=1
+PC=030 INST=a0e7a8af ALU=10a54244 MEM_OUT=11efd2d4 RS1=35d9b720 MEM_IN=11efd2d4 REG_IN=e14a9c98 RD=13 MEM_WE=1 REG_WE=1
+PC=034 INST=c0e7a5af ALU=f0a54e4c MEM_OUT=10a54244 RS1=35d9b720 MEM_IN=10a54244 REG_IN=11efd2d4 RD=14 MEM_WE=1 REG_WE=1
+PC=038 INST=e0e7a62f ALU=f0a54e4c MEM_OUT=f0a54e4c RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=10a54244 RD=15 MEM_WE=1 REG_WE=1
+PC=03c INST=0000006f ALU=11efd2d4 MEM_OUT=f0a54e4c RS1=35d9b720 MEM_IN=f0a54e4c REG_IN=f0a54e4c RD=16 MEM_WE=1 REG_WE=1
+PC=040 INST=xxxxxxxx ALU=11efd2d4 MEM_OUT=11efd2d4 RS1=35d9b720 MEM_IN=11efd2d4 REG_IN=f0a54e4c RD=17 MEM_WE=1 REG_WE=1
+PC=044 INST=xxxxxxxx ALU=11efd2d4 MEM_OUT=0038282b RS1=35d9b720 MEM_IN=11efd2d4 REG_IN=11efd2d4 RD=11 MEM_WE=1 REG_WE=1
+PC=048 INST=xxxxxxxx ALU=00000000 MEM_OUT=00000000 RS1=10a54244 MEM_IN=11efd2d4 REG_IN=0038282b RD=12 MEM_WE=1 REG_WE=1
+PC=04c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=00000000 MEM_IN=00000000 REG_IN=00000000 RD=0 MEM_WE=0 REG_WE=0
+PC=050 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=054 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=058 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=05c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=060 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=064 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=068 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=06c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=070 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=074 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=078 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=07c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=080 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=084 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=088 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=08c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=090 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=094 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=098 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=09c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0a0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0a4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0a8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0ac INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0b0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0b4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0b8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0bc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0c0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0c4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0c8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0cc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0d0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0d4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0d8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0dc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0e0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0e4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0e8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0ec INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0f0 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0f4 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0f8 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=0fc INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=100 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=104 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=108 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=10c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=110 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=114 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=118 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=11c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=120 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=124 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=128 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=12c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=130 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=134 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=138 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=13c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=140 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=144 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=148 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=14c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=150 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=154 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=158 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=15c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=160 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=164 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=168 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=16c INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+PC=170 INST=xxxxxxxx ALU=xxxxxxxx MEM_OUT=xxxxxxxx RS1=xxxxxxxx MEM_IN=xxxxxxxx REG_IN=xxxxxxxx RD=x MEM_WE=0 REG_WE=0
+Simulation complete via $finish(1) at time 940 NS + 0
+./top_tb.v:67 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 03, 2019 at 04:55:02 IST  (total: 00:00:00)

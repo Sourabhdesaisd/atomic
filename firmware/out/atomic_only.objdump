@@ -1,0 +1,31 @@
+
+out/atomic_only.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+80000000:	80004137          	lui	sp,0x80004
+80000004:	008000ef          	jal	ra,8000000c <main>
+
+80000008 <loop>:
+80000008:	0000006f          	j	80000008 <loop>
+
+8000000c <main>:
+8000000c:	ff010113          	addi	sp,sp,-16 # 80003ff0 <_stack_top+0xfffe3ff0>
+80000010:	00500793          	li	a5,5
+80000014:	00f12623          	sw	a5,12(sp)
+80000018:	00300713          	li	a4,3
+8000001c:	00c10793          	addi	a5,sp,12
+80000020:	1007a7af          	lr.w	a5,(a5)
+80000024:	18e7a7af          	sc.w	a5,a4,(a5)
+80000028:	08e7a7af          	amoswap.w	a5,a4,(a5)
+8000002c:	00e7a7af          	amoadd.w	a5,a4,(a5)
+80000030:	20e7a7af          	amoxor.w	a5,a4,(a5)
+80000034:	60e7a7af          	amoand.w	a5,a4,(a5)
+80000038:	40e7a7af          	amoor.w	a5,a4,(a5)
+8000003c:	80e7a7af          	amomin.w	a5,a4,(a5)
+80000040:	a0e7a7af          	amomax.w	a5,a4,(a5)
+80000044:	c0e7a7af          	amominu.w	a5,a4,(a5)
+80000048:	e0e7a7af          	amomaxu.w	a5,a4,(a5)
+8000004c:	0000006f          	j	8000004c <main+0x40>
